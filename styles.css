@@ -169,7 +169,7 @@ h3 {
 }
 
 .hero-actions,
-.support-actions {
+.download-actions {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -233,7 +233,7 @@ h3 {
 }
 
 .intro-grid p,
-.support p,
+.download p,
 .steps p,
 figcaption {
   color: var(--muted);
@@ -295,7 +295,7 @@ figcaption {
   font-weight: 900;
 }
 
-.support {
+.download {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
@@ -309,16 +309,16 @@ figcaption {
   border-radius: 8px;
 }
 
-.support p {
+.download p {
   max-width: 720px;
   margin-bottom: 0;
 }
 
-.support-actions {
+.download-actions {
   justify-content: flex-end;
 }
 
-.support-note {
+.download-note {
   width: 100%;
   max-width: 250px;
   font-size: 0.82rem;
@@ -362,7 +362,7 @@ figcaption {
   .intro-grid,
   .screen-grid,
   .steps,
-  .support {
+  .download {
     grid-template-columns: 1fr;
   }
 
@@ -370,7 +370,7 @@ figcaption {
     min-height: auto;
   }
 
-  .support-actions {
+  .download-actions {
     justify-content: flex-start;
   }
 }
