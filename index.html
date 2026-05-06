@@ -112,22 +112,6 @@
         </ol>
       </section>
 
-      <section id="support" class="section support" aria-labelledby="support-title">
-        <div>
-          <p class="eyebrow">Support</p>
-          <h2 id="support-title">開発を続けるための支援</h2>
-          <p>
-            シナリオ追加、画像改善、配布版の整備を進めています。
-            気に入ったらKo-fiなどで少額支援できる導線をここに置けます。
-          </p>
-        </div>
-        <div class="support-actions">
-          <a class="button primary" id="support-link" href="https://ko-fi.com/" rel="noopener noreferrer" target="_blank">
-            Ko-fiで支援
-          </a>
-          <p class="support-note">リンク先はGitHub repository variableの `SUPPORT_URL` から反映されます。</p>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
@@ -135,6 +119,18 @@
       <a href="#top">ページ上部へ</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      if (window.kofiWidgetOverlay) {
+        kofiWidgetOverlay.draw("enashimaga", {
+          type: "floating-chat",
+          "floating-chat.donateButton.text": "Support Me",
+          "floating-chat.donateButton.background-color": "#ffffff",
+          "floating-chat.donateButton.text-color": "#101820",
+        });
+      }
+    </script>
   </body>
 </html>

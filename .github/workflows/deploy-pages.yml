@@ -27,19 +27,8 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
-
-      - name: Write runtime config
-        env:
-          SUPPORT_URL: ${{ vars.SUPPORT_URL }}
-        run: |
-          python - <<'PY'
-          import json
-          import os
-
-          with open("config.json", "w", encoding="utf-8") as f:
-              json.dump({"supportUrl": os.environ.get("SUPPORT_URL", "")}, f)
-              f.write("\n")
-          PY
+        with:
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

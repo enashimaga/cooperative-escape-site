@@ -16,15 +16,8 @@ Recommended setup:
 4. Set **Source** to `GitHub Actions`.
 5. Push to `main`, or run the **Deploy GitHub Pages** workflow manually.
 
+The workflow also passes `enablement: true` to `actions/configure-pages`, which lets the action initialize Pages on the first deployment when the repository allows it.
+
 ## Support Link
 
-Create a repository variable named `SUPPORT_URL`.
-
-Example:
-
-```text
-https://ko-fi.com/yourname
-```
-
-The deploy workflow writes that value into `config.json` before publishing the site.
-For local preview, `script.js` falls back to `https://ko-fi.com/` when `config.json` is not present.
+The site uses the official Ko-fi floating widget for `enashimaga`.
