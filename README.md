@@ -16,7 +16,7 @@ Recommended setup:
 4. Set **Source** to `GitHub Actions`.
 5. Push to `main`, or run the **Deploy GitHub Pages** workflow manually.
 
-The workflow also passes `enablement: true` to `actions/configure-pages`, which lets the action initialize Pages on the first deployment when the repository allows it.
+GitHub Pages must be enabled from the repository settings before the workflow can deploy.
 
 ## Support Link
 
