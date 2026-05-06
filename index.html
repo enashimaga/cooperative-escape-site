@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cooperative Escape</title>
+    <meta
+      name="description"
+      content="Cooperative Escape は、プレイヤーとAIパートナーが別々の部屋から協力して脱出を目指す短編パズルゲームです。"
+    >
+    <meta property="og:title" content="Cooperative Escape">
+    <meta
+      property="og:description"
+      content="別々の部屋。片方だけでは解けない謎。AIパートナーと情報を共有して脱出する協力型パズルゲーム。"
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/room-a.png">
+    <meta name="theme-color" content="#101820">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="サイトヘッダー">
+      <a class="brand" href="#top" aria-label="Cooperative Escape トップへ">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Cooperative Escape</span>
+      </a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="#about">概要</a>
+        <a href="#screens">スクリーン</a>
+        <a href="#support">支援</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/room-a.png" alt="薄暗い石室に閉ざされた鉄扉があるゲーム画面風ビジュアル">
+        <div class="hero-scrim"></div>
+        <div class="hero-content">
+          <p class="eyebrow">AI partner cooperative escape game</p>
+          <h1 id="hero-title">Cooperative Escape</h1>
+          <p class="hero-copy">
+            あなたはRoom Aを探索し、AIパートナーはRoom Bを調べる。
+            互いの部屋に隠された手がかりを伝え合い、同時脱出を目指す短編パズルゲーム。
+          </p>
+          <div class="hero-actions" aria-label="主要アクション">
+            <a class="button primary" href="#play">遊び方を見る</a>
+            <a class="button ghost" href="#support">開発を支援</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section intro" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">Concept</p>
+          <h2 id="about-title">一人では出られない部屋。</h2>
+        </div>
+        <div class="intro-grid">
+          <article>
+            <h3>プレイヤーはRoom Aを探索</h3>
+            <p>画面上の場所やオブジェクトを調べ、アイテムを集め、鍵のかかった仕掛けを解いていきます。</p>
+          </article>
+          <article>
+            <h3>AIパートナーはRoom Bを探索</h3>
+            <p>別の部屋にいるパートナーが、自分だけでは見られない情報を見つけてトランシーバーで伝えてきます。</p>
+          </article>
+          <article>
+            <h3>会話が攻略になる</h3>
+            <p>片方の部屋のヒントが、もう片方の部屋の答えになる。観察と説明がそのままゲームプレイになります。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="screens" class="section screens" aria-labelledby="screens-title">
+        <div class="section-heading">
+          <p class="eyebrow">Rooms and clues</p>
+          <h2 id="screens-title">謎は壁の向こうに続いている。</h2>
+        </div>
+        <div class="screen-grid">
+          <figure>
+            <img src="assets/clue-bookshelf.png" alt="色分けされた本棚と古い机">
+            <figcaption>色の並び、本の背表紙、机上のメモ。手がかりは静かに置かれている。</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/clue-painting.png" alt="海が左右に割れ、中央に鍵が立つ絵画">
+            <figcaption>絵の中の違和感が、別の部屋にある行動のヒントになる。</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/clue-safe.png" alt="石壁に埋め込まれた古い金庫">
+            <figcaption>答えを知っているのは、自分ではなく相手かもしれない。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="play" class="section play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2 id="play-title">短く遊べて、会話が残る。</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span>01</span>
+            <p>パートナーの名前と性格を決めてゲーム開始。</p>
+          </li>
+          <li>
+            <span>02</span>
+            <p>Room Aをクリック探索しながら、トランシーバーで相談。</p>
+          </li>
+          <li>
+            <span>03</span>
+            <p>Room Bの情報と組み合わせて、双方の出口を開ける。</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="support" class="section support" aria-labelledby="support-title">
+        <div>
+          <p class="eyebrow">Support</p>
+          <h2 id="support-title">開発を続けるための支援</h2>
+          <p>
+            シナリオ追加、画像改善、配布版の整備を進めています。
+            気に入ったらKo-fiなどで少額支援できる導線をここに置けます。
+          </p>
+        </div>
+        <div class="support-actions">
+          <a class="button primary" id="support-link" href="https://ko-fi.com/" rel="noopener noreferrer" target="_blank">
+            Ko-fiで支援
+          </a>
+          <p class="support-note">リンク先はGitHub repository variableの `SUPPORT_URL` から反映されます。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Cooperative Escape</p>
+      <a href="#top">ページ上部へ</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
