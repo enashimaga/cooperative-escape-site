@@ -314,6 +314,33 @@ figcaption {
   margin-bottom: 0;
 }
 
+.download-subhead {
+  margin: 24px 0 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent, #c8b56b);
+  opacity: 0.85;
+}
+
+.download-notes {
+  max-width: 720px;
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.download-notes li + li {
+  margin-top: 8px;
+}
+
+.download-notes strong {
+  color: inherit;
+  font-weight: 700;
+}
+
 .download-actions {
   justify-content: flex-end;
 }
